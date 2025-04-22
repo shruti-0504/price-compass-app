@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": "F1",
+    "name": "iPhone 13",
+    "price": 719.99,
+    "availability": true,
+    "platform": "FLIPKART"
+  },
+  {
+    "id": "F2",
+    "name": "Samsung Galaxy S21",
+    "price": 589.99,
+    "availability": true,
+    "platform": "FLIPKART"
+  },
+  {
+    "id": "F3",
+    "name": "Sony WH-1000XM4",
+    "price": 359.99,
+    "availability": true,
+    "platform": "FLIPKART"
+  },
+  {
+    "id": "F4",
+    "name": "Macbook Air M1",
+    "price": 999.99,
+    "availability": true,
+    "platform": "FLIPKART"
+  }
+]

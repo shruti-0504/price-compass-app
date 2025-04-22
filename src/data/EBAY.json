@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": "E1",
+    "name": "iPhone 13",
+    "price": 689.99,
+    "availability": true,
+    "platform": "EBAY"
+  },
+  {
+    "id": "E2",
+    "name": "Samsung Galaxy S21",
+    "price": 579.99,
+    "availability": false,
+    "platform": "EBAY"
+  },
+  {
+    "id": "E3",
+    "name": "Sony WH-1000XM4",
+    "price": 339.99,
+    "availability": true,
+    "platform": "EBAY"
+  },
+  {
+    "id": "E4",
+    "name": "Macbook Air M1",
+    "price": 989.99,
+    "availability": true,
+    "platform": "EBAY"
+  }
+]

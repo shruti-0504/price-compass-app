@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": "S1",
+    "name": "iPhone 13",
+    "price": 729.99,
+    "availability": true,
+    "platform": "SHOPCLUES"
+  },
+  {
+    "id": "S2",
+    "name": "Samsung Galaxy S21",
+    "price": 609.99,
+    "availability": true,
+    "platform": "SHOPCLUES"
+  },
+  {
+    "id": "S3",
+    "name": "iPad Pro 11",
+    "price": 789.99,
+    "availability": true,
+    "platform": "SHOPCLUES"
+  },
+  {
+    "id": "S4",
+    "name": "Macbook Air M1",
+    "price": 1009.99,
+    "availability": false,
+    "platform": "SHOPCLUES"
+  }
+]
