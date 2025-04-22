@@ -1,13 +1,21 @@
 
 import React from "react";
 import { Card } from "@/components/ui/card";
-import { CombinedProduct } from "../types/product";
+import { CombinedProduct, USD_TO_INR } from "../types/product";
 
 interface ProductCardProps {
   product: CombinedProduct;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
+  const formatINR = (price: number) => {
+    const inrPrice = price * USD_TO_INR;
+    return new Intl.NumberFormat('en-IN', {
+      style: 'currency',
+      currency: 'INR',
+    }).format(inrPrice);
+  };
+
   return (
     <Card className="p-6 hover:shadow-lg transition-shadow">
       <h3 className="text-xl font-semibold mb-4">{product.name}</h3>
@@ -30,7 +38,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               >
                 {availability ? "In Stock" : "Out of Stock"}
               </span>
-              <span className="font-medium">${price.toFixed(2)}</span>
+              <span className="font-medium">{formatINR(price)}</span>
             </div>
           </div>
         ))}
@@ -39,7 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="flex justify-between items-center">
           <span className="text-sm text-gray-600">Best Price</span>
           <span className="text-lg font-bold text-green-600">
-            ${product.lowestPrice.toFixed(2)}
+            {formatINR(product.lowestPrice)}
           </span>
         </div>
         <div className="text-sm text-gray-500 mt-1">

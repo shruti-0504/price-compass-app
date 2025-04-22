@@ -19,3 +19,7 @@ export interface CombinedProduct {
   lowestPrice: number;
   bestPlatform: string;
 }
+
+// Currency conversion rate (USD to INR)
+export const USD_TO_INR = 83.20;
+

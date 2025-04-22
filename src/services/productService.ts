@@ -42,7 +42,7 @@ export const getAllProducts = (): CombinedProduct[] => {
 
     return {
       name,
-      prices,
+      prices: prices.sort((a, b) => a.price - b.price), // Sort prices within each product
       lowestPrice,
       bestPlatform,
     };
